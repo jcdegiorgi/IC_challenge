@@ -12,3 +12,8 @@ We understand there's more than one way to do things.
 If you're stuck, pick one and justify your choice.
 
 
+## My research process
+Find out how to create a docker HAproxy and integrate it into
+a docker-compose file.
+Do the same for the two other nodes (Django and Postgres)
+
