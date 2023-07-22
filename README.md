@@ -17,6 +17,11 @@ If you're stuck, pick one and justify your choice.
 a docker-compose file.  
 - Do the same for the two other nodes (Django and Postgres) 
 
+## How to launch
+From the _challenge_ directory, launch:  
+```bash
+docker compose up --build
+```
 
 ## My references:
 - https://github.com/Cloudstek/docker-haproxy/blob/master/docker-compose.yml
