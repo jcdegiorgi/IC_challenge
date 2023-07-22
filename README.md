@@ -2,7 +2,7 @@
 
 ## The Challenge
 
-Your challenge, should you choose to accept it, YES, I DO, 
+Your challenge, should you choose to accept it, -- YES, I DO--, 
 is to set up and maintain sustainable infrastructure for a 
 web application with Ansible or Docker. We like people who are 
 able to learn and research. Even if you might not get the tasks 
@@ -20,7 +20,7 @@ a docker-compose file.
 ## How to launch
 From the _challenge_ directory, launch:  
 ```bash
-docker compose up --build
+docker compose up 
 ```
 
 ## My references:
