@@ -13,7 +13,14 @@ If you're stuck, pick one and justify your choice.
 
 
 ## My research process
-Find out how to create a docker HAproxy and integrate it into
-a docker-compose file.
-Do the same for the two other nodes (Django and Postgres)
+- Find out how to create a docker HAproxy and integrate it into
+a docker-compose file.  
+- Do the same for the two other nodes (Django and Postgres) 
+
+
+## My references:
+- https://github.com/Cloudstek/docker-haproxy/blob/master/docker-compose.yml
+- https://github.com/docker/awesome-compose/tree/master/official-documentation-samples/django/
+
+
 
