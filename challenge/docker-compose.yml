@@ -1,9 +1,5 @@
 version: '3.7'
-volumes:
-  data:
-networks:
-  frontend:
-  backend:
+
 services:
   haproxy:
     image: haproxy:alpine
