@@ -12,8 +12,19 @@ services:
     ports:
       - "80:80"
     networks:
-      - frontend
-      - backend
+      - default
+      - proxy
+
+  dockergen:
+    image: jwilder/docker-gen
+    container_name: haproxy_generator
+    command: -notify-sighup haproxy -watch /etc/docker-gen/templates/haproxy.tmpl /usr/local/etc/haproxy/haproxy.cfg
+    restart: always
+    volumes:
+      - haproxy_conf:/usr/local/etc/haproxy
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./haproxy.tmpl:/etc/docker-gen/templates/haproxy.tmpl
+
   db:
     image: postgres
     volumes:
@@ -35,3 +46,11 @@ services:
       - POSTGRES_PASSWORD=postgres
     depends_on:
       - db
+
+volumes:
+  haproxy_conf:
+
+networks:
+  proxy:
+    external: true
+
