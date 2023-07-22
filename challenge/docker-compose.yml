@@ -5,8 +5,12 @@ services:
     image: haproxy:alpine
     container_name: haproxy
     restart: always
+    depends_on:
+      - dockergen
     ports:
       - "80:80"
+    volumes:
+      - haproxy_conf:/usr/local/etc/haproxy
     networks:
       - default
       - proxy
