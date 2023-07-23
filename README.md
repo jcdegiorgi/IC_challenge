@@ -11,13 +11,16 @@ not get the tasks completed, write down the notes with desired solution.
 - Then, I tried to find out how to create a docker HAproxy and integrate it 
 into a docker-compose file.  
 - Did the same for the two other nodes (Django and Postgres) 
-- I then assembled all the Docker container into the docker-compose file
+- I then assembled all the Docker containers into the docker-compose file
 
 ## How to launch
 From the _challenge_ directory, launch:  
 ```bash
 docker compose up 
 ```
+!! Note
+	At the moment, the developpment is not working. The configuration of the 
+	HAproxy is not working as expected.
 
 ## My references:
 - https://github.com/Cloudstek/docker-haproxy/blob/master/docker-compose.yml
