@@ -18,7 +18,7 @@ From the _challenge_ directory, launch:
 ```bash
 docker compose up 
 ```
-!! Note
+!!! Note
 	At the moment, the developpment is not working. The configuration of the 
 	HAproxy is not working as expected.
 
